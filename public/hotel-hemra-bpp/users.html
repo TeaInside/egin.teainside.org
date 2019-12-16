@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Hotel Hemra</title>
+        <!-- ICON -->
+        <link rel="icon" href="assets/img/hotel-hemra.ico" type="image/x-icon">
+
+        <!-- Font Awesome-4.7.0  -->
+        <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Bootstrap-4.3.1  -->
+        <link href="assets/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Styles -->
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+            <a class="navbar-brand ml-1" href="#">
+                <img src="assets/img/logo.png" alt="hotel-hemra">
+            </a>
+        </nav>
+
+        <div class="row no-gutters mt-5" style="height:93vh;">
+            <!-- SIDEBAR -->
+            <div class="col-md-2 bg-dark mt-4 pr-3 pt-4 position-fixed">
+                <ul class="nav flex-column ml-3 mb-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html"><i class="fa fa-tachometer mr-2" aria-hidden="true"></i> Dashboard</a><hr class="bg-secondary">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="guest.html"><i class="fa fa-address-card mr-2" aria-hidden="true"></i> Guest</a><hr class="bg-secondary">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="room.html"><i class="fa fa-building mr-2" aria-hidden="true"></i> Rooms</a><hr class="bg-secondary">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="reports.html"><i class="fa fa-file-text-o mr-2" aria-hidden="true"></i> Reports</a><hr class="bg-secondary">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="users.html"><i class="fa fa-users mr-2" aria-hidden="true"></i> Users</a><hr class="bg-secondary">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="config.html"><i class="fa fa-cogs mr-2" aria-hidden="true"></i> Configuration</a><hr class="bg-secondary">
+                    </li>
+                </ul>
+
+                <ul class="nav flex-column ml-3 mb-3" style="margin-top:36vh;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fa fa-sign-out mr-2" aria-hidden="true"></i> Log Out</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-md-10 p-5 pt-2 offset-2">
+                <h3><i class="fa fa-users mr-2" aria-hidden="true"></i> Employee</h3><hr>
+                <div class="row px-3 pt-3">
+
+                    <!-- FORM INPUT DATA EMPLOYEE -->
+                    <div class="container">                        
+                        <div class="card">
+                            <div class="card-header bg-info">
+                                <h4 class="text-white text-center">Form Input Employee</h4>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="first_name">First Name</label>
+                                            <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="last_name">Last Name</label>
+                                            <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <textarea class="form-control" id="address" rows="4" placeholder="Address" style="resize: none;" required></textarea>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="role">Role</label>
+                                            <select class="form-control" id="role">
+                                                <option>Choose...</option>
+                                                <option>Admin</option>
+                                                <option>Receptionist</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="phone_number">Phone Number</label>
+                                            <input type="text" class="form-control" id="phone_number" placeholder="000 000 000 000" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="status">Status</label>
+                                            <select class="form-control" id="status">
+                                                <option>Choose...</option>
+                                                <option>Active</option>
+                                                <option>Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <button type="submit" class="btn btn-outline-info">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TABLE LIST EMPLOYEE -->
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-header bg-info">
+                                <h4 class="text-white text-center">List Employee</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-3" style="margin-left:45.4em;">
+                                    <form class="form-inline">
+                                        <input id="search-guest" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                                <table class="table table-hover text-center">
+                                    <thead class="thead-info">
+                                        <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Role</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="list-guest">
+                                        <tr>
+                                            <th scope="row" class="pt-3">1</th>
+                                            <td class="pt-3">tatiana</td>
+                                            <td class="pt-3">Tatiana Indriani</td>
+                                            <td class="pt-3">0852456869210</td>
+                                            <td class="pt-3">Receptionist</td>
+                                            <td class="pt-3"><i class="fa fa-ban mr-1 text-danger" aria-hidden="true" data-toggle="tooltip" title="Inactive"></i></td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm mr-1" data-toggle="tooltip" title="Edit"><i class="fa fa-cogs mr-1" aria-hidden="true"></i></a>
+                                                <a href="#" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" title="Delete"><i class="fa fa-trash mx-1" aria-hidden="true"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="pt-3">2</th>
+                                            <td class="pt-3">juminten</td>
+                                            <td class="pt-3">Juminten Hamzah</td>
+                                            <td class="pt-3">0852456869543</td>
+                                            <td class="pt-3">Receptionist</td>
+                                            <td class="pt-3"><i class="fa fa-check-circle-o mr-1 text-success" aria-hidden="true" data-toggle="tooltip" title="Active"></i></td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-dark btn-sm mr-1" data-toggle="tooltip" title="Edit"><i class="fa fa-cogs mr-1" aria-hidden="true"></i></a>
+                                                <a href="#" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" title="Delete"><i class="fa fa-trash mx-1" aria-hidden="true"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap-4.3.1 -->
+        <script src="assets/bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+        <!-- jQuery-3.4.1.min -->
+        <!-- <script src="assets/js/jquery-3.4.1.min.js" defer></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!-- Scripts -->
+        <script src="assets/js/index.js" defer></script>
+    </body>
+</html>

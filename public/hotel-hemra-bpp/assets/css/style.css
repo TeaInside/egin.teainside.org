@@ -1,0 +1,27 @@
+.nav-link:hover {
+    background-color: grey;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.nav-link.active {
+    background-color: grey;
+}
+
+.card-body-icon {
+    position: absolute;
+    z-index: 0;
+    top: 35px;
+    right: 15px;
+    opacity: 0.4;
+    font-size: 90px;
+}
+
+.card-body a.btn.btn-outline-light p:hover {
+    color: black !important;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 130px;
+    border-radius: 2px;
+}
